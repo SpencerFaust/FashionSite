@@ -1,8 +1,7 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "./App.css";
 import NavIcon from "./Navigation/NavIcon";
 import NavigationMenu from "./Navigation/NavigationMenu";
-import MenuToggle from "./Navigation/MenuToggle";
 
 function App() {
   const [navOpen, setNavOpen] = useState(false);
