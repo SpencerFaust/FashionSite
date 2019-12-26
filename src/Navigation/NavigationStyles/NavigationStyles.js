@@ -1,4 +1,4 @@
-const commonStyles = {
+const navigationStyles = {
   navIconPlacement: {
     position: "absolute",
     float: "left",
@@ -17,4 +17,4 @@ const commonStyles = {
   }
 };
 
-export default commonStyles;
+export default navigationStyles;

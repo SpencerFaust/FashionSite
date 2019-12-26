@@ -10,9 +10,9 @@ import { ReactComponent as MenuToggle2 } from "../img/menuToggle2.svg";
 const ToggleWrapper = styled.span`
   cursor: pointer;
   display: inline-block;
-  height: 3rem;
+  height: 2rem;
   position: relative;
-  width: 3rem;
+  width: 2rem;
 
   /* svg animations */
   @keyframes rotate_in_cw {

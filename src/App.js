@@ -6,7 +6,6 @@ import NavigationMenu from "./Navigation/NavigationMenu";
 function App() {
   const [navOpen, setNavOpen] = useState(false);
   const handleNavToggle = () => {
-    console.log("NAV", navOpen);
     setNavOpen(!navOpen);
   };
   return (
