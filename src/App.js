@@ -1,21 +1,12 @@
-import React, { useState, useEffect } from "react";
-import "./App.css";
-import NavIcon from "./Navigation/NavIcon";
-import NavigationMenu from "./Navigation/NavigationMenu";
-import MenuToggle from "./Navigation/MenuToggle";
+import React from "react";
+import MenuMain from "./Navigation/MenuMain";
 
-function App() {
-  const [navOpen, setNavOpen] = useState(false);
-  const handleNavToggle = () => {
-    console.log("NAV", navOpen);
-    setNavOpen(!navOpen);
-  };
+const App = () => {
   return (
-    <div className="App">
-      <NavigationMenu open={navOpen} />
-      <NavIcon buttonFunction={handleNavToggle} />
+    <div>
+      <MenuMain />
     </div>
   );
-}
+};
 
 export default App;

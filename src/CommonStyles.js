@@ -12,7 +12,8 @@ const commonStyles = {
     position: "relative",
     float: "left",
     height: "100vh",
-    width: "50vw",
+    minWidth: 300,
+    width: "33vw",
     backgroundColor: "red"
   }
 };
