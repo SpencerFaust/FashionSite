@@ -1,19 +1,36 @@
-import React, { useState } from "react";
+import React, { Component } from "react";
 import NavigationMenu from "./NavigationMenu";
 import NavIcon from "./NavIcon";
+import { connect } from "react-redux";
+import PropTypes from "prop-types";
 
-const MenuMain = () => {
-  const [navOpen, setNavOpen] = useState(false);
-  const handleNavToggle = () => {
-    setNavOpen(!navOpen);
+class MenuMain extends Component {
+  handleNavToggle = () => {
+    const { dispatch, isNavMenuOpen } = this.props;
+    dispatch({
+      type: "NAV_MENU",
+      payload: { isNavMenuOpen: !isNavMenuOpen }
+    });
   };
 
-  return (
-    <div className="App">
-      <NavigationMenu open={navOpen} closeMenu={handleNavToggle} />
-      <NavIcon buttonFunction={handleNavToggle} />
-    </div>
-  );
+  render() {
+    return (
+      <div className="App">
+        <NavigationMenu />
+        <NavIcon buttonFunction={this.handleNavToggle} />
+      </div>
+    );
+  }
+}
+
+MenuMain.propTypes = {
+  dispatch: PropTypes.func
 };
 
-export default MenuMain;
+const mapStateToProps = state => {
+  const { navigation } = state || {};
+  const { isNavMenuOpen } = navigation || {};
+  return { isNavMenuOpen };
+};
+
+export default connect(mapStateToProps)(MenuMain);

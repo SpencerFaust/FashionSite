@@ -1,6 +1,6 @@
-import {
-    combineReducers
-} from 'redux';
+import { combineReducers } from "redux";
+
+import navigation from "../Navigation/reducer.navigation";
 
 // rootReducer is the primary reducer for our entire project
 // It bundles up all of the other reducers so our project can use them.
@@ -9,7 +9,7 @@ import {
 // Lets make a bigger object for our store, with the objects from our reducers.
 // This is what we get when we use 'state' inside of 'mapStateToProps'
 const rootReducer = combineReducers({
-    //Reducers are to be added here.
+  navigation
 });
 
 export default rootReducer;
