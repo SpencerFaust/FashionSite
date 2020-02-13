@@ -1,5 +1,5 @@
 import React from "react";
-import commonStyles from "../CommonStyles";
+import commonStyles from "./NavigationStyles/NavigationStyles";
 import Fade from "react-reveal/Fade";
 
 class NavigationMenu extends React.Component {
