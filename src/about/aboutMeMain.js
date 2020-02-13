@@ -1,7 +1,12 @@
 import React from "react";
+import commonStyles from "../common/commonStyles";
 
 const AboutMeMain = () => {
-  return <div />;
+  return (
+    <view style={commonStyles.aboutBackground}>
+      <text>Hello</text>
+    </view>
+  );
 };
 
 export default AboutMeMain;

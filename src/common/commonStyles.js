@@ -6,7 +6,7 @@ const commonStyles = {
     backgroundColor: "blue"
   },
   pastWorkBackground: {
-    backgroundColor: "green"
+    backgroundColor: "white"
   }
 };
 
