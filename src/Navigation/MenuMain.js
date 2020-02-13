@@ -10,7 +10,7 @@ const MenuMain = () => {
 
   return (
     <div className="App">
-      <NavigationMenu open={navOpen} />
+      <NavigationMenu open={navOpen} closeMenu={handleNavToggle} />
       <NavIcon buttonFunction={handleNavToggle} />
     </div>
   );

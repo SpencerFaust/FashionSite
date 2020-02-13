@@ -1,7 +1,8 @@
 import React from "react";
+import commonStyles from "../common/commonStyles";
 
 const resumeMain = () => {
-  return <div />;
+  return <view style={commonStyles.resumeBackground}></view>;
 };
 
 export default resumeMain;
